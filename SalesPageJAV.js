@@ -4,29 +4,29 @@ let cart = [];
 let editProductIndex = null;
 
 const sampleProducts = [
-    { name: 'Classic Shirt', category: 'shirts', image: 'https://via.placeholder.com/200x150?text=Shirt+1', price: 19.99 },
-    { name: 'Denim Pants', category: 'pants', image: 'https://via.placeholder.com/200x150?text=Pants+1', price: 29.99 },
-    { name: 'Cool Hat', category: 'hats', image: 'https://via.placeholder.com/200x150?text=Hat+1', price: 14.99 },
-    { name: 'Cargo Shorts', category: 'shorts', image: 'https://via.placeholder.com/200x150?text=Shorts+1', price: 24.99 },
-    { name: 'Flannel Shirt', category: 'shirts', image: 'https://via.placeholder.com/200x150?text=Shirt+2', price: 21.99 },
-    { name: 'Jogger Pants', category: 'pants', image: 'https://via.placeholder.com/200x150?text=Pants+2', price: 32.99 },
-    { name: 'Beanie Hat', category: 'hats', image: 'https://via.placeholder.com/200x150?text=Hat+2', price: 12.99 },
-    { name: 'Slim Shorts', category: 'shorts', image: 'https://via.placeholder.com/200x150?text=Shorts+2', price: 22.99 },
-    { name: 'Graphic Tee', category: 'shirts', image: 'https://via.placeholder.com/200x150?text=Shirt+3', price: 17.99 },
-    { name: 'Chino Pants', category: 'pants', image: 'https://via.placeholder.com/200x150?text=Pants+3', price: 27.99 },
-    { name: 'Snapback Hat', category: 'hats', image: 'https://via.placeholder.com/200x150?text=Hat+3', price: 16.99 },
-    { name: 'Board Shorts', category: 'shorts', image: 'https://via.placeholder.com/200x150?text=Shorts+3', price: 23.99 },
-    { name: 'Polo Shirt', category: 'shirts', image: 'https://via.placeholder.com/200x150?text=Shirt+4', price: 20.99 },
-    { name: 'Track Pants', category: 'pants', image: 'https://via.placeholder.com/200x150?text=Pants+4', price: 34.99 },
-    { name: 'Sun Hat', category: 'hats', image: 'https://via.placeholder.com/200x150?text=Hat+4', price: 13.99 },
-    { name: 'Swim Shorts', category: 'shorts', image: 'https://via.placeholder.com/200x150?text=Shorts+4', price: 25.99 },
+    { name: 'Classic Shirt', category: 'shirts', image: 'https://steadyclothing.com/cdn/shop/products/ST35613_teal__08619.jpg?v=1715893831&width=1200', price: 19.99 },
+    { name: 'Denim Pants', category: 'pants', image: 'https://civilianaire.com/cdn/shop/files/W10236004-INDA-A.jpg?v=1687232159', price: 29.99 },
+    { name: 'Eagles Hat', category: 'hats', image: 'https://www.47brand.com/cdn/shop/files/FL-CLSSC24GWF-KYA87-HR-F_grande.jpg?v=1717534822', price: 14.99 },
+    { name: 'Cargo Shorts', category: 'shorts', image: 'https://img4.dhresource.com/webp/m/0x0/f3/albu/km/y/01/bec263fc-5bbf-4ba0-ad61-e96b22fc3738.jpg', price: 24.99 },
+    { name: 'Flannel Shirt', category: 'shirts', image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEpJhEN-Xqb7aCd9YOBdkoHZhuKqi1YESvUBZ8efsazhCG5Eutj2IDWcqr5dLeU1vNC_ijSCTnxr9AsDsmKnJWuakZEbUzQ9YodkkKpg59OUJbKzWMmPRe', price: 21.99 },
+    { name: 'Jogger Pants', category: 'pants', image: 'https://ultraperformanceshop.com/cdn/shop/files/AE-20028-1.jpg?v=1743629634&width=1445', price: 32.99 },
+    { name: 'Beanie Hat', category: 'hats', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4tHYE4vXyIzIswUrkKSr39XaTdNz-lQq4g&s', price: 12.99 },
+    { name: 'Slim Shorts', category: 'shorts', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_dwwulqd8jLkPBbqzaEAZnExpZAZFaMWew&s', price: 22.99 },
+    { name: 'Graphic Tee', category: 'shirts', image: 'https://wearicy.com/cdn/shop/files/MARIAHTHESCIENTISTNEW.png?v=1710195346', price: 17.99 },
+    { name: 'Chino Pants', category: 'pants', image: 'https://www.westportbigandtall.com/cdn/shop/files/37957_PG80_WP_F24_63aefa6d-fc2a-4f3b-b1f4-426346ef7cc5_2048x.jpg?v=1738271372', price: 27.99 },
+    { name: 'Snapback Hat', category: 'hats', image: 'https://shop.bulls.com/cdn/shop/files/BULLMH004000C.jpg?v=1695826548', price: 16.99 },
+    { name: 'Board Shorts', category: 'shorts', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjPgEuOjsTZt86eCgNNFfT5BDEta650Yd3w&s', price: 23.99 },
+    { name: 'Polo Shirt', category: 'shirts', image: 'https://www.mrporter.com/variants/images/1647597313248156/in/w2000_q60.jpg', price: 20.99 },
+    { name: 'Track Pants', category: 'pants', image: 'https://showerspass.com/cdn/shop/products/Untitled-1.jpg?v=1679330067', price: 34.99 },
+    { name: 'Sun Hat', category: 'hats', image: 'https://m.media-amazon.com/images/I/61xI75U9XDL._AC_SX466_.jpg', price: 13.99 },
+    { name: 'Swim Shorts', category: 'shorts', image: 'https://www.surfcuz.com/cdn/shop/products/567.jpg?v=1650524629', price: 25.99 },
     // New categories with filler items
-    { name: 'Ankle Socks', category: 'socks', image: 'https://via.placeholder.com/200x150?text=Socks+1', price: 5.99 },
-    { name: 'Crew Socks', category: 'socks', image: 'https://via.placeholder.com/200x150?text=Socks+2', price: 6.99 },
-    { name: 'Running Shoes', category: 'shoes', image: 'https://via.placeholder.com/200x150?text=Shoes+1', price: 49.99 },
-    { name: 'Dress Shoes', category: 'shoes', image: 'https://via.placeholder.com/200x150?text=Shoes+2', price: 59.99 },
-    { name: 'Boxer Briefs', category: 'underwear', image: 'https://via.placeholder.com/200x150?text=Underwear+1', price: 9.99 },
-    { name: 'Trunks', category: 'underwear', image: 'https://via.placeholder.com/200x150?text=Underwear+2', price: 8.99 }
+    { name: 'Ankle Socks', category: 'socks', image: 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/e74435a1-6f46-45bb-9d00-d8ee674f43f4/U+NK+EVRY+PLS+CUSH+ANKL+6PR-BD.png', price: 5.99 },
+    { name: 'Crew Socks', category: 'socks', image: 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/cb8d316e-795a-4a9b-99e6-e8e73a46c970/Y+NK+EVERYDY+CUSH+CREW+6PR+108.png', price: 6.99 },
+    { name: 'Running Shoes', category: 'shoes', image: 'https://images.ctfassets.net/hnk2vsx53n6l/1b50G5ILoGZxs0c3juepvY/60fc94f66f8134e49dfa7babf9c92e8e/0025372c814136427ff489818a261f03f4882e1d.png?fm=webp', price: 49.99 },
+    { name: 'Dress Shoes', category: 'shoes', image: 'https://www.miomarino.com/cdn/shop/products/LS065-4-BR_P2-1_500x@2x.progressive.jpg?v=1645722218', price: 59.99 },
+    { name: 'Boxer Briefs', category: 'underwear', image: 'https://d4yxl4pe8dqlj.cloudfront.net/images/33539b10-6c81-47de-bd00-33148b93ef64/8407c460-0dbf-4cb3-863d-78120f81fc50_large.jpg', price: 9.99 },
+    { name: 'Trunks', category: 'underwear', image: 'https://cdn.hanes.com/catalog/product/H/N/HNS_UFSTA4/HNS_UFSTA4_Assorted_Front.jpg', price: 8.99 }
 ];
 
 function signIn() {
